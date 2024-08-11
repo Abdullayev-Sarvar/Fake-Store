@@ -18,7 +18,7 @@ const LoginDes = () => {
             .then(response => {
                 if(response.status === 200) {
                     localStorage.setItem('token', response.data.token);
-                    navigate('/home');
+                    navigate('/');
                 }
             })
         .catch(error => {
